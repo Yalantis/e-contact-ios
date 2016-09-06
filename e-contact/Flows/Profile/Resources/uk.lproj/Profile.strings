@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Віктор Михайлович Степаненко"; ObjectID = "Waj-fb-gzJ"; */
+"Waj-fb-gzJ.text" = "Віктор Михайлович Степаненко";
+
+/* Class = "UILabel"; text = "м. Дніпропетровськ, просп. Карла Маркса, б. 55, кв. 12"; ObjectID = "aqX-vm-2pX"; */
+"aqX-vm-2pX.text" = "м. Дніпропетровськ, просп. Карла Маркса, б. 55, кв. 12";
+
+/* Class = "UISegmentedControl"; kGj-ie-6H6.segmentTitles[0] = "Мої звернення"; ObjectID = "kGj-ie-6H6"; */
+"kGj-ie-6H6.segmentTitles[0]" = "Мої звернення";
+
+/* Class = "UISegmentedControl"; kGj-ie-6H6.segmentTitles[1] = "Чернетки"; ObjectID = "kGj-ie-6H6"; */
+"kGj-ie-6H6.segmentTitles[1]" = "Чернетки";

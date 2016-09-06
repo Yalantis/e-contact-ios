@@ -1,0 +1,69 @@
+
+/* Class = "UINavigationItem"; title = "Вхід"; ObjectID = "52G-Aa-MtI"; */
+"52G-Aa-MtI.title" = "Вхід";
+
+/* Class = "UITextField"; placeholder = "Прізвище"; ObjectID = "8js-Uo-joP"; */
+"8js-Uo-joP.placeholder" = "Прізвище";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "A2E-iv-xbw"; */
+"A2E-iv-xbw.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Ел.пошта"; ObjectID = "Ccd-fc-4aD"; */
+"Ccd-fc-4aD.placeholder" = "Ел.пошта";
+
+/* Class = "UINavigationItem"; title = "Відновлення паролю"; ObjectID = "ECr-cY-p7O"; */
+"ECr-cY-p7O.title" = "Відновлення паролю";
+
+/* Class = "UIButton"; normalTitle = "Зареєструватись"; ObjectID = "EZs-8Z-OMk"; */
+"EZs-8Z-OMk.normalTitle" = "Зареєструватись";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "EdZ-dw-Iqg"; */
+"EdZ-dw-Iqg.title" = " ";
+
+/* Class = "UITextField"; placeholder = "По-батькові"; ObjectID = "HqI-TH-1It"; */
+"HqI-TH-1It.placeholder" = "По-батькові";
+
+/* Class = "UITextField"; placeholder = "Ел.пошта"; ObjectID = "Ijx-ZH-qSa"; */
+"Ijx-ZH-qSa.placeholder" = "Ел.пошта";
+
+/* Class = "UIButton"; normalTitle = "Зареєструватись"; ObjectID = "O0f-7K-4kD"; */
+"O0f-7K-4kD.normalTitle" = "Зареєструватись";
+
+/* Class = "UITextField"; placeholder = "Ім'я"; ObjectID = "TBZ-52-Idr"; */
+"TBZ-52-Idr.placeholder" = "Ім'я";
+
+/* Class = "UITextField"; placeholder = "Телефон"; ObjectID = "X9I-Q9-O25"; */
+"X9I-Q9-O25.placeholder" = "Телефон";
+
+/* Class = "UIButton"; normalTitle = "Увійти"; ObjectID = "ZgN-e7-jz0"; */
+"ZgN-e7-jz0.normalTitle" = "Увійти";
+
+/* Class = "UIButton"; normalTitle = "Забули пароль?"; ObjectID = "a2D-a7-8Di"; */
+"a2D-a7-8Di.normalTitle" = "Забули пароль?";
+
+/* Class = "UILabel"; text = "Введіть адресу електронної пошти,\nза допомогою якої Ви реєеструвалися"; ObjectID = "aUa-he-IT8"; */
+"aUa-he-IT8.text" = "Введіть адресу електронної пошти,\nза допомогою якої Ви реєеструвалися";
+
+/* Class = "UITextField"; placeholder = "Підтвердіть пароль"; ObjectID = "df4-lR-U6u"; */
+"df4-lR-U6u.placeholder" = "Підтвердіть пароль";
+
+/* Class = "UIBarButtonItem"; title = "  "; ObjectID = "fKp-bS-AfE"; */
+"fKp-bS-AfE.title" = "  ";
+
+/* Class = "UIButton"; normalTitle = "Надіслаті новий пароль"; ObjectID = "fzN-zf-sWb"; */
+"fzN-zf-sWb.normalTitle" = "Надіслаті новий пароль";
+
+/* Class = "UITextField"; placeholder = "Домашня адреса"; ObjectID = "g23-OC-mQ9"; */
+"g23-OC-mQ9.placeholder" = "Домашня адреса";
+
+/* Class = "UINavigationItem"; title = "Реєстрація"; ObjectID = "gKc-T8-c0o"; */
+"gKc-T8-c0o.title" = "Реєстрація";
+
+/* Class = "UIBarButtonItem"; title = "  "; ObjectID = "giP-3h-ywh"; */
+"giP-3h-ywh.title" = "  ";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "gvV-N7-GSy"; */
+"gvV-N7-GSy.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = " Ел.пошта"; ObjectID = "sAl-8x-Php"; */
+"sAl-8x-Php.placeholder" = " Ел.пошта";

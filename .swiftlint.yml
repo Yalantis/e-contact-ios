@@ -1,0 +1,9 @@
+disabled_rules:
+  - variable_name
+  - super_call_separation
+excluded:
+  - Pods
+  - Frameworks
+  - ./e-contact/External
+line_length: 120
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_VERSION</key>
+	<string>/rest/v1/</string>
+	<key>API_URL</key>
+	<string>http://e-contact.yalantis.com</string>
+	<key>API_FILE_PATH</key>
+	<string>/files/ticket/</string>
+	<key>API_CATEGORY_IMAGE_PATH</key>
+	<string>/static/images/categories/</string>
+	<key>API_ANSWER_PATH</key>
+	<string>/files/answers/</string>
+</dict>
+</plist>

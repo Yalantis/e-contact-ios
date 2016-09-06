@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Address" representedClassName=".Address" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="districtName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="houseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="streetId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="ticketAddress" inverseEntity="Ticket" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="address" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="CategoryImage" representedClassName=".CategoryImage" syncable="YES">
+        <attribute name="highResolution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lowResolution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediumResolution" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TicketCategory" inverseName="image" inverseEntity="TicketCategory" syncable="YES"/>
+    </entity>
+    <entity name="Ticket" representedClassName=".Ticket" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deadline" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="likesCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="localIdentifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="ticketId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TicketAnswer" inverseName="tickets" inverseEntity="TicketAnswer" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TicketCategory" inverseName="tickets" inverseEntity="TicketCategory" syncable="YES"/>
+        <relationship name="geoAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TicketGeoAddress" inverseName="tickets" inverseEntity="TicketGeoAddress" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TicketImage" inverseName="tickets" inverseEntity="TicketImage" syncable="YES"/>
+        <relationship name="performers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TicketPerformers" inverseName="tickets" inverseEntity="TicketPerformers" syncable="YES"/>
+        <relationship name="state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TicketState" inverseName="tickets" inverseEntity="TicketState" syncable="YES"/>
+        <relationship name="ticketAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="tickets" inverseEntity="Address" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TicketType" inverseName="tickets" inverseEntity="TicketType" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tickets" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="TicketAnswer" representedClassName=".TicketAnswer" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="originName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="answers" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketCategory" representedClassName=".TicketCategory" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryImage" inverseName="categories" inverseEntity="CategoryImage" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="category" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketGeoAddress" representedClassName=".TicketGeoAddress" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="geoAddress" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketImage" representedClassName=".TicketImage" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="images" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketPerformers" representedClassName=".TicketPerformers" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="organization" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="performers" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketState" representedClassName=".TicketState" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="state" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="TicketType" representedClassName=".TicketType" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="type" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fbRegistered" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="users" inverseEntity="Address" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="user" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Address" positionX="-380" positionY="54" width="128" height="238"/>
+        <element name="CategoryImage" positionX="-180" positionY="-108" width="128" height="105"/>
+        <element name="Ticket" positionX="-63" positionY="-18" width="128" height="345"/>
+        <element name="TicketAnswer" positionX="-180" positionY="-108" width="128" height="105"/>
+        <element name="TicketCategory" positionX="304" positionY="72" width="128" height="120"/>
+        <element name="TicketGeoAddress" positionX="-180" positionY="-108" width="128" height="120"/>
+        <element name="TicketImage" positionX="-0" positionY="-252" width="128" height="105"/>
+        <element name="TicketPerformers" positionX="-180" positionY="-108" width="128" height="90"/>
+        <element name="TicketState" positionX="180" positionY="-135" width="128" height="90"/>
+        <element name="TicketType" positionX="261" positionY="-36" width="128" height="90"/>
+        <element name="User" positionX="-225" positionY="-54" width="128" height="210"/>
+    </elements>
+</model>

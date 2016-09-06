@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Категорiя"; ObjectID = "62l-GO-7MY"; */
+"62l-GO-7MY.text" = "Категорiя";
+
+/* Class = "UITextView"; text = "Опишiть проблему"; ObjectID = "7Mb-u1-A1P"; */
+"7Mb-u1-A1P.text" = "Опишiть проблему";
+
+/* Class = "UIButton"; normalTitle = "Виберіть адресу на мапі"; ObjectID = "F44-vu-oir"; */
+"F44-vu-oir.normalTitle" = "Виберіть адресу на мапі";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "G4I-Cl-e4o"; */
+"G4I-Cl-e4o.title" = " ";
+
+/* Class = "UILabel"; text = "Змiст звернення"; ObjectID = "Hmu-Gd-n1L"; */
+"Hmu-Gd-n1L.text" = "Змiст звернення";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "StP-en-UqC"; */
+"StP-en-UqC.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Додати звернення"; ObjectID = "juE-PL-4fi"; */
+"juE-PL-4fi.title" = "Додати звернення";
+
+/* Class = "UILabel"; text = "Територіальна прив'язка"; ObjectID = "mJz-8W-GAN"; */
+"mJz-8W-GAN.text" = "Територіальна прив'язка";
+
+/* Class = "UITextView"; text = "Введіть адресу"; ObjectID = "qrP-tE-aMI"; */
+"qrP-tE-aMI.text" = "Введіть адресу";
+
+/* Class = "UIButton"; normalTitle = "Адреса помешкання"; ObjectID = "tcx-WB-h0s"; */
+"tcx-WB-h0s.normalTitle" = "Адреса помешкання";
+
+/* Class = "UILabel"; text = "Адреса"; ObjectID = "wnQ-iz-Tz4"; */
+"wnQ-iz-Tz4.text" = "Адреса";

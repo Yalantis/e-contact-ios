@@ -1,0 +1,166 @@
+/*
+ Localizable.strings
+ e-contact
+ 
+ Created by Boris on 3/15/16.
+ Copyright © 2016 Yalantis. All rights reserved.
+ */
+
+
+// MARK: - Registration Errors
+
+"registration.error.empty_fields" = "Будь ласка, заповніть усі обов'язкові поля";
+"registration.error.email_validation" = "Будь ласка, введіть дійсний email";
+"registration.error.first_name_validation" = "Довжина імені має бути в межах від 3 до 30 символів";
+"registration.error.middle_name_validation" = "Довжина iменi по-батькові має бути в межах від 4 до 30 символів";
+"registration.error.last_name_validation" = "Довжина прізвища має бути в межах від 4 до 30 символів";
+"registration.error.password_validation" = "Довжина паролю має бути в межах від 4 до 20 символів";
+"registration.error.phone_validation" = "Довжина номера телефону має бути в межах від 10 до 18 символів";
+"registration.error.empty_address" = "Будь ласка, введіть існуючу адресу";
+"network.error.already_used_value" = "Цей %@ вже зареєстровано";
+"phone" = "телефон";
+"email" = "email";
+
+// MARK: - Network Errors
+
+"network.error.no_internet_connection" = "Відсутнє інтернет-з'єднання";
+"network.error.unknow_error" = "Вибачте, сталась помилка";
+"network.error.bad_credentials" = "Введенi данi не спiвпадають";
+"network.error.internet_connection_was_lost" = "Інтернет-з'єднання було втрачено";
+"network.error.session_expired" = "Час сесії вичерпано, увійдіть в аккаунт ще раз";
+"network.error.access_forbidden" = "Доступ заборонено";
+"network.error.request_timeout" = "Час очікування запиту минув";
+"network.error.server_could_not_be_found" = "Сервер не знайдено";
+"network.error.limited_request" = "Виникла помилка під час з'эднання з сервером. Спробуйте ще раз.";
+
+// MARK: - Formats
+
+"format.local.address" = "м. %@ %@, %@, б. %@%@";
+"format.local.address_flat" = ", кв. %@";
+"format.selected.category.less_than_5" = "Обрано %d категорії";
+"format.selected.category.one" = "Обрана %d категорія";
+"format.selected.category.none" = "Не обрано жодної категорії";
+"format.selected.category.more_than_4" = "Обрано %d категорій";
+"format.imges.uploading.bar.message" = "Це може зайняті деякий час %@/%@";
+
+// MARK: - AddressPicker
+
+"address_picker.error.fill_flat_text_field" = "Введiть коректний номер квартири. Приклад: 1, 1-А, 1б";
+"address_picker.title.home_address" = "Адреса проживання";
+"address_picker.title.choose_address" = "Оберіть адресу";
+"address_picker.title.choose_district" = "Оберіть район або місто";
+"address_picker.object_type.district" = "Район";
+"address_picker.title.choose_city" = "Оберіть місто";
+"address_picker.object_type.city" = "Місто";
+"address_picker.title.choose_street" = "Оберіть вулицю";
+"address_picker.title.choose_number" = "Оберіть номер будинку";
+"address_picker.object_type.number" = "Будинок №";
+
+// MARK: - CategoryPicker
+
+"category_picker.title.filters" = "Фільтри";
+"category_picker.title.choose_category" = "Оберіть категорію";
+"category.picket.navigation.bar.right.item.title.select_all" = "Вибрати всi";
+"category.picket.navigation.bar.right.item.title.unselect_all" = "Скинути всi";
+"category_picker.back_button.title.cancel" = "Вiдмiна";
+"category_picker.some_selected_category.back_button.title.accept" = "Прийняти";
+
+// MARK: - TicketCreation Messages
+
+"ticketCreation.alerts.add_photo" = "Додати фото";
+"ticketCreation.alerts.cancel" = "Відміна";
+"ticketCreation.alerts.stop_uploading" = "Відмінити";
+"ticketCreation.alerts.delete_photo" = "Видалити";
+"ticketCreation.alerts.choose_from_gallery" = "Обрати з галереї";
+"ticketCreation.alerts.error" = "Помилка";
+"ticketCreation.alerts.camera_not_available" = "Камера недоступна";
+"ticketCreation.alerts.deletion" = "Видалення";
+"ticketCreation.alerts.deletion_message" = "Ви бажаєте видалити це фото?";
+"ticketCreation.alerts.yes" = "Так";
+"ticketCreation.alerts.no" = "Ні";
+"ticketCreation.alerts.save_to_draft_message" = "Ви бажаєте зберегти звернення?";
+"ticketCreation.describe_problem" = "Опишiть проблему";
+"ticketCreation.your_ticket_was_sent" = "Ваше звернення відправлене";
+"ticketCreation.alerts.please_choose_category_of_ticket" = "Будь ласка, оберіть категорію проблеми";
+"ticketCreation.alerts.please_choose_address_of_ticket" = "Будь ласка, оберіть адресу проблеми";
+"ticketCreation.alerts.please_fill_description_of_ticket" = "Будь ласка, заповніть зміст проблеми";
+"ticketCreation.imagepicker.settings_button" = "Налаштування";
+"ticketCreation.request.error_while_sending_ticket" = "Виникла помилка під час відправлення звернення, спробуйте пізніше";
+"ticketCreation.equest.error_while_uploading_ticket_image" = "Виникла помилка під час завантаження фотографії";
+"ticketCreation.enter_address" = "Введіть адресу";
+"ticketCreation.ticket" = "Звернення";
+"ticketCreation.ticket.uploaded_without_photo" = "Завантаження зображень перервано. Звернення відправлено.";
+"ticketCreation.alerts.uploading_photo" = "Завантажуємо фото";
+
+// MARK: - DetailedTicket Messages
+
+"detailedTicket.alert.comment_alert_title" = "Коментар виконавця";
+"detailedTicket.alert.comment_accepted" = "Добре";
+"detailedTicket.date.string.today" = "Сьогоднi";
+"detailedTicket.date.string.yesterday" = "Вчора";
+"detailedTicket.like.message" = "Ви вже вподобали це звернення";
+"detailedTicket.performer_comment" = "Відповідь виконавця";
+"detailedTicket.ticket_update_failure" = "Виникла помилка під час завантаження звернення";
+
+// MARK: - Internal errors
+
+"user.error.has_no_address" = "User without adress, it's a bug";
+"pick_place.error.arror_while_picking_place" = "Помилка під час вибору місця";
+
+// MARK: - Geo short additions
+
+"geoAddress.string.latitude" = "ш.";
+"geoAddress.string.longitude" = "д.";
+
+// MARK: - Feed list ticket page state names
+
+"feedPage.inProgress" = "В роботі";
+"feedPage.done" = "Виконано";
+"feedPage.pending" = "Очікує";
+
+// MARK: - Notification
+
+"notification.alert.cancel" = "Відміна";
+"notification.alert.show_ticket" = "Показати звернення";
+"notification.alert.status_did_changed" = "Статус вашого звернення був змінений";
+"notification.alert.notification" = "Повідомлення";
+
+// MARK: - Password Recovery
+
+"password.recovery.password_has_been_sent_to_your_email" = "На %@ надіслано новий пароль, перевірте поштову скриньку та папку Спам";
+"password.recovery.wrong_email" = "Користувача з таким email не знайдено";
+
+// MARK: - Feed Cell
+
+"feedCell.not_ticket_address" = "Адресу не вказано";
+"feedCell.choose_category" = "Оберiть категорiю";
+
+// MARK: - GoogleMaps
+
+"googleMaps.alert.cant_show_detailed_ticket.check_internet" = "Немождиво відобразити звернення. Перевірте ваше інтернет-з'єднання";
+"googleMaps.alert.cant_show_cluster_content.check_internet" = "Неможливо відобразити вміст кластера. Перевірте ваше інтернет-з'єднання.";
+
+// MARK: - Map filters button
+
+"mapFiltersButton.inProgress" = "В роботі";
+"mapFiltersButton.done" = "Виконано";
+"mapFiltersButton.pending" = "Очікує";
+"mapFiltersButton.all" = "Всi";
+
+// MARK: - App alerts
+
+"simple_app.alert.error.title" = "Помилка";
+"simple_app.alert.error.ok_button" = "Добре";
+
+// MARK: - Change Password
+
+"changePassword.alert.your_password_was_changed" = "Ваш пароль був змінений";
+"changePassword.alert.wrong_old_password" = "Невірний пароль";
+"changePassword.alert.confirm_password" = "Введені паролі мають бути різними";
+"changePassword.alert.password_validation" = "Довжина нового паролю має бути в межах від 4 до 20 символів";
+
+// MARK: - Ticket Answer
+
+"ticketAnswer.controller.title" = "Відповідь виконавця";
+"ticketAnswer.alert.answer_unavailable" = "Файл не доступний";
+

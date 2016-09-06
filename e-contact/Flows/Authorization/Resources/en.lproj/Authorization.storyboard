@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Вхід-->
+        <scene sceneID="c6K-7o-STa">
+            <objects>
+                <viewController restorationIdentifier="LoginController" storyboardIdentifier="LoginController" id="9X3-Ps-wvi" customClass="LoginController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ME-zf-OUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3JP-6N-3Xo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r4y-Wo-x5i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ел.пошта" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ccd-fc-4aD" customClass="RoundedTextField" customModule="e_contact">
+                                <rect key="frame" x="10" y="52" width="580" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="feX-kZ-wRg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="feX-kZ-wRg"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2E-iv-xbw" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                <rect key="frame" x="10" y="112" width="580" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iNF-6m-2uA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iNF-6m-2uA"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-e7-jz0">
+                                <rect key="frame" x="10" y="180" width="580" height="45"/>
+                                <color key="backgroundColor" red="0.32941176470588235" green="0.50196078431372548" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cPe-va-33F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Увійти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cPe-va-33F"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="login:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="vjY-Zd-mTg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2D-a7-8Di">
+                                <rect key="frame" x="236" y="253" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="y5l-cc-h3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Забули пароль?">
+                                    <color key="titleColor" red="0.3294117647" green="0.50196078430000002" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toPasswordRecovery:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="3DM-xn-m1J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-7K-4kD">
+                                <rect key="frame" x="231" y="527" width="139" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WIt-sd-Esc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Зареєструватись">
+                                    <color key="titleColor" red="0.3294117647" green="0.50196078430000002" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toRegistration:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="CnY-28-WwG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZgN-e7-jz0" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="1Mz-06-86m"/>
+                            <constraint firstItem="O0f-7K-4kD" firstAttribute="centerX" secondItem="r4y-Wo-x5i" secondAttribute="centerX" id="1Vc-sa-D0f"/>
+                            <constraint firstItem="A2E-iv-xbw" firstAttribute="top" secondItem="Ccd-fc-4aD" secondAttribute="bottom" constant="16" id="6MX-yE-j5g"/>
+                            <constraint firstItem="3JP-6N-3Xo" firstAttribute="top" secondItem="O0f-7K-4kD" secondAttribute="bottom" constant="28" id="9wT-WV-LJT"/>
+                            <constraint firstItem="A2E-iv-xbw" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="CvF-vk-0h8"/>
+                            <constraint firstItem="Ccd-fc-4aD" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="IyA-oc-H85"/>
+                            <constraint firstAttribute="trailing" secondItem="A2E-iv-xbw" secondAttribute="trailing" constant="10" id="Mj4-Dc-cV3"/>
+                            <constraint firstAttribute="trailing" secondItem="ZgN-e7-jz0" secondAttribute="trailing" constant="10" id="SGT-Ql-Qz5"/>
+                            <constraint firstItem="ZgN-e7-jz0" firstAttribute="top" secondItem="A2E-iv-xbw" secondAttribute="bottom" constant="24" id="ffl-Ay-Esn"/>
+                            <constraint firstItem="a2D-a7-8Di" firstAttribute="top" secondItem="ZgN-e7-jz0" secondAttribute="bottom" constant="28" id="gW2-4s-mEK"/>
+                            <constraint firstItem="Ccd-fc-4aD" firstAttribute="top" secondItem="6ME-zf-OUZ" secondAttribute="bottom" constant="32" id="pln-tP-77p"/>
+                            <constraint firstAttribute="trailing" secondItem="Ccd-fc-4aD" secondAttribute="trailing" constant="10" id="svi-xj-wb9"/>
+                            <constraint firstItem="a2D-a7-8Di" firstAttribute="centerX" secondItem="r4y-Wo-x5i" secondAttribute="centerX" id="zeY-6L-LAa"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ccd-fc-4aD"/>
+                                <include reference="A2E-iv-xbw"/>
+                                <include reference="ZgN-e7-jz0"/>
+                                <include reference="a2D-a7-8Di"/>
+                                <include reference="O0f-7K-4kD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IyA-oc-H85"/>
+                                <include reference="pln-tP-77p"/>
+                                <include reference="svi-xj-wb9"/>
+                                <include reference="6MX-yE-j5g"/>
+                                <include reference="CvF-vk-0h8"/>
+                                <include reference="Mj4-Dc-cV3"/>
+                                <include reference="1Mz-06-86m"/>
+                                <include reference="SGT-Ql-Qz5"/>
+                                <include reference="ffl-Ay-Esn"/>
+                                <include reference="gW2-4s-mEK"/>
+                                <include reference="zeY-6L-LAa"/>
+                                <include reference="1Vc-sa-D0f"/>
+                                <include reference="9wT-WV-LJT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вхід" id="52G-Aa-MtI">
+                        <barButtonItem key="backBarButtonItem" title="  " id="giP-3h-ywh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="Ccd-fc-4aD" id="2NM-ri-lI4"/>
+                        <outlet property="passwordTextField" destination="A2E-iv-xbw" id="x0C-gL-O0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9r-kb-uFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643.5" y="522"/>
+        </scene>
+        <!--Відновлення паролю-->
+        <scene sceneID="DeI-M5-4sP">
+            <objects>
+                <viewController storyboardIdentifier="PasswordRecoveryController" id="MRE-OI-11F" customClass="PasswordRecoveryController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WTn-yJ-rW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="WbC-WQ-byG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eRj-WU-M6o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzN-zf-sWb">
+                                <rect key="frame" x="10" y="539" width="580" height="45"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.41568627450000001" blue="0.63921568630000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DK8-8p-KeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Надіслаті новий пароль">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DK8-8p-KeW"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-he-IT8">
+                                <rect key="frame" x="162" y="62" width="276" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="PJF-xf-CI9"/>
+                                </constraints>
+                                <string key="text">Введіть адресу електронної пошти,
+за допомогою якої Ви реєеструвалися</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Ел.пошта" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAl-8x-Php" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                <rect key="frame" x="10" y="132" width="580" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yLT-MY-YR3"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fzN-zf-sWb" firstAttribute="leading" secondItem="eRj-WU-M6o" secondAttribute="leading" constant="10" id="1lC-oH-4X1"/>
+                            <constraint firstItem="sAl-8x-Php" firstAttribute="leading" secondItem="eRj-WU-M6o" secondAttribute="leading" constant="10" id="6NC-3L-p9C"/>
+                            <constraint firstItem="sAl-8x-Php" firstAttribute="top" secondItem="aUa-he-IT8" secondAttribute="bottom" constant="16" id="K1R-V1-ALv"/>
+                            <constraint firstItem="WbC-WQ-byG" firstAttribute="top" secondItem="fzN-zf-sWb" secondAttribute="bottom" constant="23" id="QNA-fN-qVJ"/>
+                            <constraint firstItem="aUa-he-IT8" firstAttribute="centerX" secondItem="eRj-WU-M6o" secondAttribute="centerX" id="QVO-Gm-KXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fzN-zf-sWb" secondAttribute="trailing" constant="10" id="aj1-6f-yj0"/>
+                            <constraint firstItem="WbC-WQ-byG" firstAttribute="top" secondItem="fzN-zf-sWb" secondAttribute="bottom" constant="16" id="dgd-AO-Ezr"/>
+                            <constraint firstItem="aUa-he-IT8" firstAttribute="top" secondItem="WTn-yJ-rW2" secondAttribute="bottom" constant="42" id="eS1-03-Qx7"/>
+                            <constraint firstAttribute="trailing" secondItem="sAl-8x-Php" secondAttribute="trailing" constant="10" id="kbe-W2-Ntm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QNA-fN-qVJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fzN-zf-sWb"/>
+                                <include reference="aUa-he-IT8"/>
+                                <include reference="sAl-8x-Php"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6NC-3L-p9C"/>
+                                <include reference="K1R-V1-ALv"/>
+                                <include reference="kbe-W2-Ntm"/>
+                                <include reference="QVO-Gm-KXZ"/>
+                                <include reference="eS1-03-Qx7"/>
+                                <include reference="QNA-fN-qVJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Відновлення паролю" id="ECr-cY-p7O">
+                        <barButtonItem key="backBarButtonItem" title=" " id="EdZ-dw-Iqg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajS-SH-ZuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643.5" y="1233.75"/>
+        </scene>
+        <!--Реєстрація-->
+        <scene sceneID="fvs-DQ-xcr">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationController" id="t41-sn-DK2" customClass="RegistrationController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dm-Ft-Bib"/>
+                        <viewControllerLayoutGuide type="bottom" id="kcJ-hU-M6H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwa-Yd-7lO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-L8-y1F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ijw-q3-Yv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ел.пошта" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-ZH-qSa" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="22" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="h6a-Qf-Rs0"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-N7-GSy" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="82" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="V5J-qs-ouU"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Прізвище" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8js-Uo-joP" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="202" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="7lZ-r4-Gah"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ім'я" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBZ-52-Idr" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="262" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="onm-pw-q8b"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Підтвердіть пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="df4-lR-U6u" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="142" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="chO-lb-uaO"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="По-батькові" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-TH-1It" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="322" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="1s3-JB-hkl"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Домашня адреса" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g23-OC-mQ9" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="382" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="T90-NP-9JI"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9I-Q9-O25" customClass="RoundedTextField" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="442" width="580" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="ARx-GA-AZg"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-8Z-OMk">
+                                                <rect key="frame" x="10" y="536" width="580" height="45"/>
+                                                <color key="backgroundColor" red="0.27450980390000002" green="0.41568627450000001" blue="0.63921568630000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="A15-ca-bCF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Зареєструватись">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="toFeed:" destination="t41-sn-DK2" eventType="touchUpInside" id="9gs-M4-Bbx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXh-V3-kwY">
+                                                <rect key="frame" x="10" y="382" width="580" height="44"/>
+                                                <connections>
+                                                    <action selector="toAddressPicker" destination="t41-sn-DK2" eventType="touchUpInside" id="sPx-8p-TGs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-7M-DOy">
+                                                <rect key="frame" x="10" y="442" width="580" height="44"/>
+                                                <connections>
+                                                    <action selector="toTwitterDigits:" destination="t41-sn-DK2" eventType="touchUpInside" id="oEe-1R-XVh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LXh-V3-kwY" firstAttribute="height" secondItem="g23-OC-mQ9" secondAttribute="height" id="0eD-QU-ELC"/>
+                                            <constraint firstItem="vnc-7M-DOy" firstAttribute="width" secondItem="X9I-Q9-O25" secondAttribute="width" id="4Vb-7a-D8I"/>
+                                            <constraint firstItem="vnc-7M-DOy" firstAttribute="top" secondItem="X9I-Q9-O25" secondAttribute="top" id="4lU-dv-IT9"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="X9I-Q9-O25" secondAttribute="bottom" constant="25" id="5sY-wH-k7F"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="6ia-JA-BgY"/>
+                                            <constraint firstItem="g23-OC-mQ9" firstAttribute="top" secondItem="HqI-TH-1It" secondAttribute="bottom" constant="16" id="7PH-nS-Ani"/>
+                                            <constraint firstAttribute="trailing" secondItem="TBZ-52-Idr" secondAttribute="trailing" constant="10" id="7RO-ef-f0g"/>
+                                            <constraint firstItem="8js-Uo-joP" firstAttribute="top" secondItem="df4-lR-U6u" secondAttribute="bottom" constant="16" id="7hz-ov-OgS"/>
+                                            <constraint firstItem="gvV-N7-GSy" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="7yL-EH-obU"/>
+                                            <constraint firstItem="X9I-Q9-O25" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="8RU-f4-Y2e"/>
+                                            <constraint firstItem="LXh-V3-kwY" firstAttribute="top" secondItem="g23-OC-mQ9" secondAttribute="top" id="C4H-JS-gtD"/>
+                                            <constraint firstAttribute="bottom" secondItem="EZs-8Z-OMk" secondAttribute="bottom" constant="19" id="D9Z-xe-ZHy"/>
+                                            <constraint firstAttribute="trailing" secondItem="X9I-Q9-O25" secondAttribute="trailing" constant="10" id="DB7-4I-zbF"/>
+                                            <constraint firstItem="HqI-TH-1It" firstAttribute="top" secondItem="TBZ-52-Idr" secondAttribute="bottom" constant="16" id="Dgx-Gt-Ray"/>
+                                            <constraint firstAttribute="trailing" secondItem="EZs-8Z-OMk" secondAttribute="trailing" constant="10" id="E3b-tr-pS4"/>
+                                            <constraint firstItem="df4-lR-U6u" firstAttribute="top" secondItem="gvV-N7-GSy" secondAttribute="bottom" constant="16" id="GHM-Sc-hRm"/>
+                                            <constraint firstItem="Ijx-ZH-qSa" firstAttribute="top" secondItem="ijw-q3-Yv3" secondAttribute="top" constant="22" id="GOh-L0-DAA"/>
+                                            <constraint firstAttribute="trailing" secondItem="g23-OC-mQ9" secondAttribute="trailing" constant="10" id="M0p-Uq-Z7U"/>
+                                            <constraint firstItem="X9I-Q9-O25" firstAttribute="top" secondItem="g23-OC-mQ9" secondAttribute="bottom" constant="16" id="NiK-dL-fQY"/>
+                                            <constraint firstItem="HqI-TH-1It" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="P0H-7C-AIS"/>
+                                            <constraint firstAttribute="trailing" secondItem="df4-lR-U6u" secondAttribute="trailing" constant="10" id="P7R-9l-AFw"/>
+                                            <constraint firstAttribute="trailing" secondItem="gvV-N7-GSy" secondAttribute="trailing" constant="10" id="QjS-es-g4a"/>
+                                            <constraint firstItem="LXh-V3-kwY" firstAttribute="width" secondItem="g23-OC-mQ9" secondAttribute="width" id="RXd-F8-kfU"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="top" secondItem="X9I-Q9-O25" secondAttribute="bottom" priority="990" constant="50" id="SA3-qJ-z7M"/>
+                                            <constraint firstItem="8js-Uo-joP" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="TaT-Nw-Kej"/>
+                                            <constraint firstAttribute="trailing" secondItem="HqI-TH-1It" secondAttribute="trailing" constant="10" id="a9g-Ai-dms"/>
+                                            <constraint firstItem="TBZ-52-Idr" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="csm-c6-ank"/>
+                                            <constraint firstItem="gvV-N7-GSy" firstAttribute="top" secondItem="Ijx-ZH-qSa" secondAttribute="bottom" constant="16" id="dDO-Pi-mhz"/>
+                                            <constraint firstItem="vnc-7M-DOy" firstAttribute="height" secondItem="X9I-Q9-O25" secondAttribute="height" id="efo-fl-K5f"/>
+                                            <constraint firstItem="Ijx-ZH-qSa" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="gij-xS-f0v"/>
+                                            <constraint firstItem="vnc-7M-DOy" firstAttribute="leading" secondItem="X9I-Q9-O25" secondAttribute="leading" id="jaM-fO-e6I"/>
+                                            <constraint firstItem="TBZ-52-Idr" firstAttribute="top" secondItem="8js-Uo-joP" secondAttribute="bottom" constant="16" id="jwq-pG-4n3"/>
+                                            <constraint firstItem="LXh-V3-kwY" firstAttribute="leading" secondItem="g23-OC-mQ9" secondAttribute="leading" id="mD8-XP-Pww"/>
+                                            <constraint firstAttribute="trailing" secondItem="8js-Uo-joP" secondAttribute="trailing" constant="10" id="oA3-3u-HWk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ijx-ZH-qSa" secondAttribute="trailing" constant="10" id="tpd-E1-IG6"/>
+                                            <constraint firstItem="LXh-V3-kwY" firstAttribute="bottom" secondItem="g23-OC-mQ9" secondAttribute="bottom" id="wIJ-lE-HBH"/>
+                                            <constraint firstItem="g23-OC-mQ9" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="y35-zl-iKc"/>
+                                            <constraint firstItem="df4-lR-U6u" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="z8g-Bc-l3g"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="Ijx-ZH-qSa"/>
+                                                <include reference="gvV-N7-GSy"/>
+                                                <include reference="8js-Uo-joP"/>
+                                                <include reference="TBZ-52-Idr"/>
+                                                <include reference="df4-lR-U6u"/>
+                                                <include reference="HqI-TH-1It"/>
+                                                <include reference="g23-OC-mQ9"/>
+                                                <include reference="EZs-8Z-OMk"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="gij-xS-f0v"/>
+                                                <include reference="tpd-E1-IG6"/>
+                                                <include reference="7yL-EH-obU"/>
+                                                <include reference="QjS-es-g4a"/>
+                                                <include reference="dDO-Pi-mhz"/>
+                                                <include reference="GHM-Sc-hRm"/>
+                                                <include reference="P7R-9l-AFw"/>
+                                                <include reference="z8g-Bc-l3g"/>
+                                                <include reference="7hz-ov-OgS"/>
+                                                <include reference="TaT-Nw-Kej"/>
+                                                <include reference="oA3-3u-HWk"/>
+                                                <include reference="7RO-ef-f0g"/>
+                                                <include reference="csm-c6-ank"/>
+                                                <include reference="jwq-pG-4n3"/>
+                                                <include reference="Dgx-Gt-Ray"/>
+                                                <include reference="P0H-7C-AIS"/>
+                                                <include reference="a9g-Ai-dms"/>
+                                                <include reference="7PH-nS-Ani"/>
+                                                <include reference="M0p-Uq-Z7U"/>
+                                                <include reference="y35-zl-iKc"/>
+                                                <include reference="6ia-JA-BgY"/>
+                                                <include reference="E3b-tr-pS4"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ijw-q3-Yv3" secondAttribute="bottom" id="3hA-cH-LEw"/>
+                                    <constraint firstItem="ijw-q3-Yv3" firstAttribute="leading" secondItem="3HR-L8-y1F" secondAttribute="leading" id="4Zd-iD-m2D"/>
+                                    <constraint firstAttribute="trailing" secondItem="ijw-q3-Yv3" secondAttribute="trailing" id="WGR-2I-X15"/>
+                                    <constraint firstItem="ijw-q3-Yv3" firstAttribute="top" secondItem="3HR-L8-y1F" secondAttribute="top" id="jsS-er-9od"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3hA-cH-LEw"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3HR-L8-y1F" firstAttribute="top" secondItem="nwa-Yd-7lO" secondAttribute="top" id="18R-hi-qgR"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="height" relation="greaterThanOrEqual" secondItem="nwa-Yd-7lO" secondAttribute="height" constant="-64" id="7Yj-9Y-bn2"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="width" secondItem="nwa-Yd-7lO" secondAttribute="width" id="K5R-s6-YZA"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="height" secondItem="nwa-Yd-7lO" secondAttribute="height" priority="999" constant="-64" id="Kn1-iQ-acq">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                            </constraint>
+                            <constraint firstItem="kcJ-hU-M6H" firstAttribute="top" secondItem="3HR-L8-y1F" secondAttribute="bottom" id="SIo-dS-dIP"/>
+                            <constraint firstItem="3HR-L8-y1F" firstAttribute="leading" secondItem="nwa-Yd-7lO" secondAttribute="leading" id="iTc-Fc-iOU"/>
+                            <constraint firstAttribute="trailing" secondItem="3HR-L8-y1F" secondAttribute="trailing" id="o2d-GU-BMX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Yj-9Y-bn2"/>
+                                <exclude reference="Kn1-iQ-acq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="7Yj-9Y-bn2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Kn1-iQ-acq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Реєстрація" id="gKc-T8-c0o">
+                        <barButtonItem key="backBarButtonItem" title="  " id="fKp-bS-AfE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressTextField" destination="g23-OC-mQ9" id="s35-cZ-wRT"/>
+                        <outlet property="confirmPasswordTextField" destination="df4-lR-U6u" id="WAS-pO-wmf"/>
+                        <outlet property="emailTextField" destination="Ijx-ZH-qSa" id="hc7-cj-cBs"/>
+                        <outlet property="firstNameTextField" destination="TBZ-52-Idr" id="gYw-Q9-Pcd"/>
+                        <outlet property="lastNameTextField" destination="8js-Uo-joP" id="dDz-GW-DLJ"/>
+                        <outlet property="middleNameTextField" destination="HqI-TH-1It" id="bmX-GM-TZH"/>
+                        <outlet property="passwordTextField" destination="gvV-N7-GSy" id="XCB-7X-RPE"/>
+                        <outlet property="phoneNumberTextField" destination="X9I-Q9-O25" id="Uuz-TF-Kbr"/>
+                    </connections>
+                </viewController>
+                <customObject id="5d6-PX-htL" customClass="ScrollViewKeyboardController" customModule="e_contact" customModuleProvider="target">
+                    <connections>
+                        <outlet property="scrollView" destination="3HR-L8-y1F" id="EmE-aL-WFD"/>
+                    </connections>
+                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApS-Sb-7yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1406" y="522"/>
+        </scene>
+    </scenes>
+</document>

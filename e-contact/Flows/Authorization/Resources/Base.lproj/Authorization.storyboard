@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Вхід-->
+        <scene sceneID="c6K-7o-STa">
+            <objects>
+                <viewController restorationIdentifier="LoginController" storyboardIdentifier="LoginController" id="9X3-Ps-wvi" customClass="LoginController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ME-zf-OUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3JP-6N-3Xo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r4y-Wo-x5i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-e7-jz0">
+                                <rect key="frame" x="10" y="180" width="580" height="45"/>
+                                <color key="backgroundColor" red="0.32941176470588235" green="0.50196078431372548" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cPe-va-33F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Увійти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cPe-va-33F"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="login:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="v2t-xZ-N7p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2D-a7-8Di">
+                                <rect key="frame" x="236" y="253" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="y5l-cc-h3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Забули пароль?">
+                                    <color key="titleColor" red="0.3294117647" green="0.50196078430000002" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPasswordRecovery:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="5zF-p7-CRJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-7K-4kD">
+                                <rect key="frame" x="231" y="527" width="139" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WIt-sd-Esc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Зареєструватись">
+                                    <color key="titleColor" red="0.3294117647" green="0.50196078430000002" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRegistration:" destination="9X3-Ps-wvi" eventType="touchUpInside" id="Dzb-ta-7V9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Qgt-y7-C3n" customClass="EmailValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                <rect key="frame" x="10" y="52" width="580" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="UFV-LB-tQ2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Ел.поштa"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="UFV-LB-tQ2" id="iPR-oG-7pN"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-D1-4Bh" customClass="LastPasswordValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                <rect key="frame" x="10" y="111" width="580" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="pbK-ou-NQs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Пароль"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="pbK-ou-NQs" id="ocE-yY-DFT"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZgN-e7-jz0" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="1Mz-06-86m"/>
+                            <constraint firstItem="O0f-7K-4kD" firstAttribute="centerX" secondItem="r4y-Wo-x5i" secondAttribute="centerX" id="1Vc-sa-D0f"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="O0f-7K-4kD" secondAttribute="bottom" constant="28" id="QwH-lU-3gS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZgN-e7-jz0" secondAttribute="trailing" constant="10" id="SGT-Ql-Qz5"/>
+                            <constraint firstItem="nuh-D1-4Bh" firstAttribute="top" secondItem="Qgt-y7-C3n" secondAttribute="bottom" constant="6" id="TgT-9c-rC2"/>
+                            <constraint firstItem="Qgt-y7-C3n" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="Z8p-bv-AkZ"/>
+                            <constraint firstItem="a2D-a7-8Di" firstAttribute="top" secondItem="ZgN-e7-jz0" secondAttribute="bottom" constant="28" id="gW2-4s-mEK"/>
+                            <constraint firstAttribute="trailing" secondItem="Qgt-y7-C3n" secondAttribute="trailing" constant="10" id="orp-VO-alU"/>
+                            <constraint firstAttribute="trailing" secondItem="nuh-D1-4Bh" secondAttribute="trailing" constant="10" id="pmP-rz-O7x"/>
+                            <constraint firstItem="Qgt-y7-C3n" firstAttribute="top" secondItem="6ME-zf-OUZ" secondAttribute="bottom" constant="32" id="rv0-qw-JQf"/>
+                            <constraint firstItem="ZgN-e7-jz0" firstAttribute="top" secondItem="nuh-D1-4Bh" secondAttribute="bottom" constant="16" id="uhe-bY-t94"/>
+                            <constraint firstItem="nuh-D1-4Bh" firstAttribute="leading" secondItem="r4y-Wo-x5i" secondAttribute="leading" constant="10" id="yv1-ID-zk9"/>
+                            <constraint firstItem="a2D-a7-8Di" firstAttribute="centerX" secondItem="r4y-Wo-x5i" secondAttribute="centerX" id="zeY-6L-LAa"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZgN-e7-jz0"/>
+                                <include reference="a2D-a7-8Di"/>
+                                <include reference="O0f-7K-4kD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Mz-06-86m"/>
+                                <include reference="SGT-Ql-Qz5"/>
+                                <include reference="gW2-4s-mEK"/>
+                                <include reference="zeY-6L-LAa"/>
+                                <include reference="1Vc-sa-D0f"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вхід" id="52G-Aa-MtI">
+                        <barButtonItem key="backBarButtonItem" title="  " id="giP-3h-ywh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailValidationForm" destination="Qgt-y7-C3n" id="8d7-iE-9cc"/>
+                        <outlet property="logInButton" destination="ZgN-e7-jz0" id="Jgb-0A-Kxc"/>
+                        <outlet property="passwordValidationForm" destination="nuh-D1-4Bh" id="Vcr-0J-LXz"/>
+                        <outletCollection property="allEditableValidatingForms" destination="Qgt-y7-C3n" collectionClass="NSMutableArray" id="dyZ-RI-CXn"/>
+                        <outletCollection property="allEditableValidatingForms" destination="nuh-D1-4Bh" collectionClass="NSMutableArray" id="iL8-9g-zLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9r-kb-uFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="522"/>
+        </scene>
+        <!--Відновлення паролю-->
+        <scene sceneID="DeI-M5-4sP">
+            <objects>
+                <viewController storyboardIdentifier="PasswordRecoveryController" id="MRE-OI-11F" customClass="PasswordRecoveryController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WTn-yJ-rW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="WbC-WQ-byG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eRj-WU-M6o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzN-zf-sWb">
+                                <rect key="frame" x="10" y="539" width="580" height="45"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.41568627450000001" blue="0.63921568630000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DK8-8p-KeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Надіслаті новий пароль">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DK8-8p-KeW"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sendEmail:" destination="MRE-OI-11F" eventType="touchUpInside" id="M55-YI-Oyz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-he-IT8">
+                                <rect key="frame" x="162" y="62" width="276" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="PJF-xf-CI9"/>
+                                </constraints>
+                                <string key="text">Введіть адресу електронної пошти,
+за допомогою якої Ви реєеструвалися</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="o0f-Oq-exp" customClass="LastEmailValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                <rect key="frame" x="10" y="130" width="580" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="2dY-FY-WI6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Ел.поштa"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="2dY-FY-WI6" id="69v-U7-SO0"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fzN-zf-sWb" firstAttribute="leading" secondItem="eRj-WU-M6o" secondAttribute="leading" constant="10" id="1lC-oH-4X1"/>
+                            <constraint firstItem="WbC-WQ-byG" firstAttribute="top" secondItem="fzN-zf-sWb" secondAttribute="bottom" constant="23" id="QNA-fN-qVJ"/>
+                            <constraint firstItem="aUa-he-IT8" firstAttribute="centerX" secondItem="eRj-WU-M6o" secondAttribute="centerX" id="QVO-Gm-KXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="o0f-Oq-exp" secondAttribute="trailing" constant="10" id="aXK-T7-E0i"/>
+                            <constraint firstAttribute="trailing" secondItem="fzN-zf-sWb" secondAttribute="trailing" constant="10" id="aj1-6f-yj0"/>
+                            <constraint firstItem="WbC-WQ-byG" firstAttribute="top" secondItem="fzN-zf-sWb" secondAttribute="bottom" constant="16" id="dgd-AO-Ezr"/>
+                            <constraint firstItem="aUa-he-IT8" firstAttribute="top" secondItem="WTn-yJ-rW2" secondAttribute="bottom" constant="42" id="eS1-03-Qx7"/>
+                            <constraint firstItem="o0f-Oq-exp" firstAttribute="leading" secondItem="eRj-WU-M6o" secondAttribute="leading" constant="10" id="f2d-ip-h4m"/>
+                            <constraint firstItem="o0f-Oq-exp" firstAttribute="top" secondItem="aUa-he-IT8" secondAttribute="bottom" constant="14" id="gyo-3g-rSZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QNA-fN-qVJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fzN-zf-sWb"/>
+                                <include reference="aUa-he-IT8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QVO-Gm-KXZ"/>
+                                <include reference="eS1-03-Qx7"/>
+                                <include reference="QNA-fN-qVJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Відновлення паролю" id="ECr-cY-p7O">
+                        <barButtonItem key="backBarButtonItem" title=" " id="EdZ-dw-Iqg"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailValidationForm" destination="o0f-Oq-exp" id="eFM-WT-faO"/>
+                        <outlet property="sendEmailButton" destination="fzN-zf-sWb" id="dhE-a1-ZSw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajS-SH-ZuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643.5" y="1233.75"/>
+        </scene>
+        <!--Реєстрація-->
+        <scene sceneID="fvs-DQ-xcr">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationController" extendedLayoutIncludesOpaqueBars="YES" id="t41-sn-DK2" customClass="RegistrationController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dm-Ft-Bib"/>
+                        <viewControllerLayoutGuide type="bottom" id="kcJ-hU-M6H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwa-Yd-7lO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-L8-y1F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ijw-q3-Yv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="538"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="sOB-H5-Gac" customClass="EmailValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="22" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="BJc-ao-ZYC"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Ел.поштa"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="BJc-ao-ZYC" id="7E0-vB-Vfk"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-iB-TFE" customClass="PasswordValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="81" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="Ivo-rB-BQJ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Пароль"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="Ivo-rB-BQJ" id="gdc-QE-XKl"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-gt-0uf" customClass="LastNameValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="140" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="QYg-JL-Yjb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Прізвище"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="QYg-JL-Yjb" id="iSD-ER-vHx"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-Tc-aSg" customClass="FirstNameValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="199" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="cYl-9J-yBr"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Ім'я"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="cYl-9J-yBr" id="XWa-PE-bdx"/>
+                                                </connections>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-Gp-IEX">
+                                                <rect key="frame" x="10" y="317" width="580" height="44"/>
+                                                <connections>
+                                                    <action selector="showAddressPicker" destination="t41-sn-DK2" eventType="touchUpInside" id="RnR-Zg-2P8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQa-Od-2KY">
+                                                <rect key="frame" x="10" y="376" width="580" height="44"/>
+                                                <connections>
+                                                    <action selector="showTwitterDigits:" destination="t41-sn-DK2" eventType="touchUpInside" id="F87-ws-BIy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-8Z-OMk">
+                                                <rect key="frame" x="10" y="474" width="580" height="45"/>
+                                                <color key="backgroundColor" red="0.27450980390000002" green="0.41568627450000001" blue="0.63921568630000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="A15-ca-bCF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Зареєструватись">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registerUser:" destination="t41-sn-DK2" eventType="touchUpInside" id="myC-ar-6w2"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="l0n-hZ-no0" customClass="MiddleNameValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="258" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="WA2-MQ-IZ9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="По-батькові"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="WA2-MQ-IZ9" id="u27-r3-JDb"/>
+                                                </connections>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Lpp-FF-86f" customClass="BaseValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="317" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="88N-EW-6Jl"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Адреса"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="88N-EW-6Jl" id="OsF-HR-Ca0"/>
+                                                </connections>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-Dm-o8H" customClass="BaseValidatingForm" customModule="e_contact" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="376" width="580" height="53"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="WLs-89-rk1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textFieldPlaceHolder" value="Телефон"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="heightConstraint" destination="WLs-89-rk1" id="QW7-u2-c0a"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="dzH-iB-TFE" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="00f-aw-jX7"/>
+                                            <constraint firstItem="Lpp-FF-86f" firstAttribute="top" secondItem="l0n-hZ-no0" secondAttribute="bottom" constant="6" id="1Fv-cz-nqc"/>
+                                            <constraint firstItem="Bmc-Dm-o8H" firstAttribute="top" secondItem="Lpp-FF-86f" secondAttribute="bottom" constant="6" id="2KL-1M-BkX"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="top" secondItem="Bmc-Dm-o8H" secondAttribute="bottom" constant="45" placeholder="YES" id="37o-Jd-hX5"/>
+                                            <constraint firstAttribute="trailing" secondItem="dzH-iB-TFE" secondAttribute="trailing" constant="10" id="4On-7q-NnI"/>
+                                            <constraint firstAttribute="trailing" secondItem="sOB-H5-Gac" secondAttribute="trailing" constant="10" id="6i3-GJ-27d"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="6ia-JA-BgY"/>
+                                            <constraint firstItem="l0n-hZ-no0" firstAttribute="top" secondItem="3Ra-Tc-aSg" secondAttribute="bottom" constant="6" id="6tL-Yz-pBs"/>
+                                            <constraint firstItem="Bmc-Dm-o8H" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="7NS-Uh-cn7"/>
+                                            <constraint firstItem="gCN-gt-0uf" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="Aec-7Z-2L1"/>
+                                            <constraint firstItem="Xbv-Gp-IEX" firstAttribute="width" secondItem="Lpp-FF-86f" secondAttribute="width" id="Az7-hq-vXF"/>
+                                            <constraint firstAttribute="bottom" secondItem="EZs-8Z-OMk" secondAttribute="bottom" constant="19" id="D9Z-xe-ZHy"/>
+                                            <constraint firstAttribute="trailing" secondItem="EZs-8Z-OMk" secondAttribute="trailing" constant="10" id="E3b-tr-pS4"/>
+                                            <constraint firstItem="vQa-Od-2KY" firstAttribute="height" secondItem="Bmc-Dm-o8H" secondAttribute="height" constant="-9" id="Gjs-my-naH"/>
+                                            <constraint firstItem="3Ra-Tc-aSg" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="JcQ-Jo-VJ7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bmc-Dm-o8H" secondAttribute="trailing" constant="10" id="K0x-cL-ewM"/>
+                                            <constraint firstItem="3Ra-Tc-aSg" firstAttribute="top" secondItem="gCN-gt-0uf" secondAttribute="bottom" constant="6" id="K59-Dl-7Pb"/>
+                                            <constraint firstAttribute="trailing" secondItem="gCN-gt-0uf" secondAttribute="trailing" constant="10" id="M1O-ur-FPe"/>
+                                            <constraint firstItem="dzH-iB-TFE" firstAttribute="top" secondItem="sOB-H5-Gac" secondAttribute="bottom" constant="6" id="QZh-Gx-2yI"/>
+                                            <constraint firstItem="sOB-H5-Gac" firstAttribute="top" secondItem="ijw-q3-Yv3" secondAttribute="top" constant="22" id="R2x-v9-tDL"/>
+                                            <constraint firstItem="gCN-gt-0uf" firstAttribute="top" secondItem="dzH-iB-TFE" secondAttribute="bottom" constant="6" id="V35-YB-SRe"/>
+                                            <constraint firstItem="Xbv-Gp-IEX" firstAttribute="top" secondItem="Lpp-FF-86f" secondAttribute="top" id="cag-l4-lPf"/>
+                                            <constraint firstItem="Xbv-Gp-IEX" firstAttribute="height" secondItem="Lpp-FF-86f" secondAttribute="height" constant="-9" id="cls-ql-ZIP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lpp-FF-86f" secondAttribute="trailing" constant="10" id="h6x-x3-3wk"/>
+                                            <constraint firstItem="Lpp-FF-86f" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="hWh-5C-aIi"/>
+                                            <constraint firstItem="Xbv-Gp-IEX" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="hkt-jx-qWb"/>
+                                            <constraint firstItem="l0n-hZ-no0" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="iGC-ry-7fn"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Ra-Tc-aSg" secondAttribute="trailing" constant="10" id="iX6-6N-JoI"/>
+                                            <constraint firstAttribute="trailing" secondItem="l0n-hZ-no0" secondAttribute="trailing" constant="10" id="kqv-jG-KDX"/>
+                                            <constraint firstItem="l0n-hZ-no0" firstAttribute="top" secondItem="3Ra-Tc-aSg" secondAttribute="bottom" constant="6" id="mhY-IS-mBV"/>
+                                            <constraint firstItem="vQa-Od-2KY" firstAttribute="top" secondItem="Bmc-Dm-o8H" secondAttribute="top" id="qBP-3t-qYE"/>
+                                            <constraint firstItem="3Ra-Tc-aSg" firstAttribute="top" secondItem="gCN-gt-0uf" secondAttribute="bottom" constant="6" id="rGs-hG-dDM"/>
+                                            <constraint firstItem="sOB-H5-Gac" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="t5a-XR-Coa"/>
+                                            <constraint firstItem="EZs-8Z-OMk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Bmc-Dm-o8H" secondAttribute="bottom" constant="25" id="tkt-hc-OF2"/>
+                                            <constraint firstItem="vQa-Od-2KY" firstAttribute="leading" secondItem="ijw-q3-Yv3" secondAttribute="leading" constant="10" id="v7v-bd-Oyr"/>
+                                            <constraint firstItem="vQa-Od-2KY" firstAttribute="width" secondItem="Bmc-Dm-o8H" secondAttribute="width" id="vFQ-Ib-OpW"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="EZs-8Z-OMk"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="6ia-JA-BgY"/>
+                                                <include reference="E3b-tr-pS4"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ijw-q3-Yv3" secondAttribute="bottom" id="3hA-cH-LEw"/>
+                                    <constraint firstItem="ijw-q3-Yv3" firstAttribute="leading" secondItem="3HR-L8-y1F" secondAttribute="leading" id="4Zd-iD-m2D"/>
+                                    <constraint firstAttribute="trailing" secondItem="ijw-q3-Yv3" secondAttribute="trailing" id="WGR-2I-X15"/>
+                                    <constraint firstItem="ijw-q3-Yv3" firstAttribute="top" secondItem="3HR-L8-y1F" secondAttribute="top" id="jsS-er-9od"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3hA-cH-LEw"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3HR-L8-y1F" firstAttribute="top" secondItem="nwa-Yd-7lO" secondAttribute="top" id="18R-hi-qgR"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="height" relation="greaterThanOrEqual" secondItem="nwa-Yd-7lO" secondAttribute="height" constant="-64" id="7Yj-9Y-bn2"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="width" secondItem="nwa-Yd-7lO" secondAttribute="width" id="K5R-s6-YZA"/>
+                            <constraint firstItem="ijw-q3-Yv3" firstAttribute="height" secondItem="nwa-Yd-7lO" secondAttribute="height" priority="999" constant="-64" id="Kn1-iQ-acq">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                            </constraint>
+                            <constraint firstItem="kcJ-hU-M6H" firstAttribute="top" secondItem="3HR-L8-y1F" secondAttribute="bottom" id="SIo-dS-dIP"/>
+                            <constraint firstItem="3HR-L8-y1F" firstAttribute="leading" secondItem="nwa-Yd-7lO" secondAttribute="leading" id="iTc-Fc-iOU"/>
+                            <constraint firstAttribute="trailing" secondItem="3HR-L8-y1F" secondAttribute="trailing" id="o2d-GU-BMX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Yj-9Y-bn2"/>
+                                <exclude reference="Kn1-iQ-acq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="7Yj-9Y-bn2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Kn1-iQ-acq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Реєстрація" id="gKc-T8-c0o">
+                        <barButtonItem key="backBarButtonItem" title="  " id="fKp-bS-AfE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressValidatingForm" destination="Lpp-FF-86f" id="SNu-Kb-OP4"/>
+                        <outlet property="emailValidatingForm" destination="sOB-H5-Gac" id="uX9-c4-Wlh"/>
+                        <outlet property="firstNameValidatingForm" destination="3Ra-Tc-aSg" id="Fvn-9b-JUe"/>
+                        <outlet property="lastNameValidatingForm" destination="gCN-gt-0uf" id="ZvV-My-Z0h"/>
+                        <outlet property="middleNameValidatingForm" destination="l0n-hZ-no0" id="a8G-Xa-ZbO"/>
+                        <outlet property="passwordValidatingForm" destination="dzH-iB-TFE" id="2wo-xU-pe1"/>
+                        <outlet property="phoneNumberValidatingForm" destination="Bmc-Dm-o8H" id="6Ve-DC-doa"/>
+                        <outlet property="registerButton" destination="EZs-8Z-OMk" id="Gba-jg-0ru"/>
+                        <outlet property="scrollView" destination="3HR-L8-y1F" id="3KH-X4-RaG"/>
+                        <outletCollection property="allValidatingForms" destination="sOB-H5-Gac" collectionClass="NSMutableArray" id="Xw3-Vf-vYv"/>
+                        <outletCollection property="allValidatingForms" destination="dzH-iB-TFE" collectionClass="NSMutableArray" id="NEJ-6m-Bch"/>
+                        <outletCollection property="allValidatingForms" destination="gCN-gt-0uf" collectionClass="NSMutableArray" id="BTc-Pq-BtI"/>
+                        <outletCollection property="allValidatingForms" destination="3Ra-Tc-aSg" collectionClass="NSMutableArray" id="uyh-xp-sDM"/>
+                        <outletCollection property="allValidatingForms" destination="l0n-hZ-no0" collectionClass="NSMutableArray" id="TAs-dq-Qkh"/>
+                        <outletCollection property="allValidatingForms" destination="Lpp-FF-86f" collectionClass="NSMutableArray" id="A3b-T8-Lff"/>
+                        <outletCollection property="allValidatingForms" destination="Bmc-Dm-o8H" collectionClass="NSMutableArray" id="wfv-sg-gJc"/>
+                        <outletCollection property="allEditableValidatingForms" destination="sOB-H5-Gac" collectionClass="NSMutableArray" id="Zqh-LI-O9i"/>
+                        <outletCollection property="allEditableValidatingForms" destination="dzH-iB-TFE" collectionClass="NSMutableArray" id="EMy-By-MgC"/>
+                        <outletCollection property="allEditableValidatingForms" destination="gCN-gt-0uf" collectionClass="NSMutableArray" id="6eQ-ca-p8C"/>
+                        <outletCollection property="allEditableValidatingForms" destination="3Ra-Tc-aSg" collectionClass="NSMutableArray" id="Zcc-0p-tC2"/>
+                        <outletCollection property="allEditableValidatingForms" destination="l0n-hZ-no0" collectionClass="NSMutableArray" id="3u3-lu-hpE"/>
+                        <outletCollection property="transliteratableValidatingForms" destination="gCN-gt-0uf" collectionClass="NSMutableArray" id="re0-Ko-YWv"/>
+                        <outletCollection property="transliteratableValidatingForms" destination="3Ra-Tc-aSg" collectionClass="NSMutableArray" id="k0O-Ts-3fy"/>
+                        <outletCollection property="transliteratableValidatingForms" destination="l0n-hZ-no0" collectionClass="NSMutableArray" id="bkN-Mr-lEv"/>
+                    </connections>
+                </viewController>
+                <customObject id="5d6-PX-htL" customClass="ScrollViewKeyboardController" customModule="e_contact" customModuleProvider="target">
+                    <connections>
+                        <outlet property="scrollView" destination="3HR-L8-y1F" id="EmE-aL-WFD"/>
+                    </connections>
+                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApS-Sb-7yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="kPx-b2-f8C">
+                    <rect key="frame" x="0.0" y="0.0" width="596" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1406" y="522"/>
+        </scene>
+    </scenes>
+</document>

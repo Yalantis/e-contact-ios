@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="20Z-jB-Mjd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Звернення-->
+        <scene sceneID="9O9-09-u00">
+            <objects>
+                <viewController restorationIdentifier="FeedController" storyboardIdentifier="FeedController" id="20Z-jB-Mjd" customClass="FeedController" customModule="e_contact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bsy-iQ-mgl"/>
+                        <viewControllerLayoutGuide type="bottom" id="CKc-Hg-zos"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QIA-Bc-zD1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRs-tt-Cc1">
+                                <rect key="frame" x="195" y="242" width="210" height="117"/>
+                                <color key="backgroundColor" red="0.52336760719602515" green="1" blue="0.6729196245377661" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="LZR-XW-1Jg"/>
+                                    <constraint firstAttribute="width" constant="210" id="Lhl-B6-kle"/>
+                                </constraints>
+                                <state key="normal" title="Proceede to authorization"/>
+                                <connections>
+                                    <action selector="toAuth:" destination="20Z-jB-Mjd" eventType="touchUpInside" id="04k-OC-oOm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZRs-tt-Cc1" firstAttribute="centerY" secondItem="QIA-Bc-zD1" secondAttribute="centerY" id="4ie-xJ-3Sy"/>
+                            <constraint firstItem="ZRs-tt-Cc1" firstAttribute="centerX" secondItem="QIA-Bc-zD1" secondAttribute="centerX" id="gU2-R0-f1u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Звернення" id="g91-bd-dp1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="KjD-gY-XjZ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LW8-nV-3RY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307" y="564"/>
+        </scene>
+    </scenes>
+</document>

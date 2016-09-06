@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "Місто"; ObjectID = "1jt-e4-6cz"; */
+"1jt-e4-6cz.placeholder" = "Місто";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "4Op-Nb-O7b"; */
+"4Op-Nb-O7b.title" = " ";
+
+/* Class = "UITextField"; placeholder = "Номер будинка"; ObjectID = "7Jl-uA-Cj7"; */
+"7Jl-uA-Cj7.placeholder" = "Номер будинка";
+
+/* Class = "UITextField"; placeholder = "Вулиця"; ObjectID = "8ri-Di-SMS"; */
+"8ri-Di-SMS.placeholder" = "Вулиця";
+
+/* Class = "UIButton"; normalTitle = "Зберігти"; ObjectID = "BGd-Dm-Ze8"; */
+"BGd-Dm-Ze8.normalTitle" = "Зберігти";
+
+/* Class = "UITextField"; placeholder = "Район"; ObjectID = "RD6-DL-cX2"; */
+"RD6-DL-cX2.placeholder" = "Район";
+
+/* Class = "UITextField"; placeholder = "Номер квартири"; ObjectID = "TZh-Ta-3kM"; */
+"TZh-Ta-3kM.placeholder" = "Номер квартири";
+
+/* Class = "UINavigationItem"; title = "set title in code"; ObjectID = "vYH-qP-o1X"; */
+"vYH-qP-o1X.title" = "set title in code";
