@@ -1,7 +1,5 @@
 ## e-contact-iOS
-<img src="Screenshots/1.jpg" width="250" />
-<img src="Screenshots/2.jpg" width="250" />
-<img src="Screenshots/3.jpg" width="250" />
+<img src="ScreenShots/1.jpg" width="250" /><img src="ScreenShots/2.jpg" width="250" /><img src="ScreenShots/3.jpg" width="250" />
 
 <a href="https://itunes.apple.com/ua/app/e-contact/id1127753185?l=ru&mt=8"><img alt="Get it on iTune" src="https://rm-content.s3.amazonaws.com/565db6d831349bf032b4d428/462224/upload-77ecb980-abd3-11e5-b868-4555c93c8067.png"/></a>
 
