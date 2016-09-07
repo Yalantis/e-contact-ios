@@ -1,4 +1,4 @@
-## e-contact-iOS
+## E-contact - iOS application for a pre-existing regional government service
 <img src="ScreenShots/1.jpg" width="250" /><img src="ScreenShots/2.jpg" width="250" /><img src="ScreenShots/3.jpg" width="250" />
 
 <a href="https://itunes.apple.com/ua/app/e-contact/id1127753185?l=ru&mt=8"><img alt="Get it on iTune" src="https://rm-content.s3.amazonaws.com/565db6d831349bf032b4d428/462224/upload-77ecb980-abd3-11e5-b868-4555c93c8067.png"/></a>
@@ -41,6 +41,10 @@ Development tools - UIKit, Swift, Objective C.
 [**Keychain Access**](https://github.com/kishikawakatsumi/KeychainAccess) - Simple Swift wrapper for Keychain that works on iOS and OS X.
 
 [**Device Kit**](https://github.com/dennisweissmann/DeviceKit) - DeviceKit is a value-type replacement of UIDevice.
+
+## Let us know!
+
+We’d be really happy if you sent us links to your projects where you use our source code. Just send an email to github@yalantis.com And do let us know if you have any questions or suggestion regarding the application.
 
 ## License
 
