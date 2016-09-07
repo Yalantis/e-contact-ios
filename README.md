@@ -13,12 +13,13 @@ E-contact will deliver the complaint to the responsible party and will notify yo
 
 ## Technology Stack
 
-Continuous Integration -  Xcode Server
-Crashlog - Crashlitics
-Build delivery - Fabric
-Database - Core Data
-Serverside - Parse server
-Development tools - UIKit, Swift, Objective C.
+ Crashlog - Crashlitics
+ 
+ Build delivery - Fabric
+ 
+ Database - Core Data
+ 
+ Development tools - UIKit, Swift, Objective C.
 
 ## Used libraries
 
